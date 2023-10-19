@@ -6,6 +6,14 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-updates",
+        {
+          "username": "account-username"
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,10 +29,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.scottgrun.updatescrashingdemo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fd780929-b189-4b7e-9034-fdabc0ecba84"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/fd780929-b189-4b7e-9034-fdabc0ecba84"
     }
   }
 }
