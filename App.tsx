@@ -27,7 +27,7 @@ export default function App() {
         // Pre-load fonts, make any API calls you need to do here
         // Artificially delay for two seconds to simulate a slow loading
         // experience. Please remove this if you copy and paste the code!
-        onFetchUpdateAsync();
+        await onFetchUpdateAsync();
       } catch (e) {
         console.warn(e);
       } finally {
